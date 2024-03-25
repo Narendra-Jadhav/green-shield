@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 34px;
+    background-color: black;
+    color: white;
+}
+
+li {
+    list-style: none;
+    padding: 23px;
+}
+
+.logo {
+    text-decoration: none;
+    padding: 23px;
+    color: rgb(0, 221, 118);
+    font-weight: bold;
+}
+
+.active {
+    background-color: green;
+}
