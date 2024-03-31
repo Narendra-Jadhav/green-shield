@@ -4,7 +4,10 @@ const About = () => {
   return (
     <div>
       <Header />
-      About
+      <div className='mx-[25%] my-[2%]'>
+        <h1 className='font-bold text-3xl'>About Us</h1>
+        <p className='pt-8'>Pesticides website. Check Plant Diseases. Get Weather details.</p>
+      </div>
     </div>
   )
 }

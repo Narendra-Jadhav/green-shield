@@ -1,39 +1,21 @@
-import './App.css'
-import About from './pages/About'
-import CheckDisease from './pages/CheckDisease'
-import Contact from './pages/Contact'
-import Home from './pages/Home'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Products from './pages/Products'
+import { ClerkProvider } from "@clerk/clerk-react";
+import { Outlet, useNavigate } from "react-router-dom";
 
-function App() {
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Home />
-    },
-    {
-      path: '/about',
-      element: <About />
-    },
-    {
-      path: '/contact',
-      element: <Contact />
-    },
-    {
-      path: '/check-disease',
-      element: <CheckDisease />
-    },
-    {
-      path: '/products',
-      element: <Products />
-    }
-  ])
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+
+if (!PUBLISHABLE_KEY) {
+  throw new Error("Missing Publishable Key")
+}
+
+const App = () => {
+  const navigate = useNavigate();
 
   return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
+    <ClerkProvider navigate={navigate} publishableKey={PUBLISHABLE_KEY} appearance={{variables: {colorPrimary: "#2E8B57"}}}>
+      <main>
+        <Outlet />
+      </main>
+    </ClerkProvider>
   )
 }
 

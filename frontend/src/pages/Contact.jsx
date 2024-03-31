@@ -4,7 +4,11 @@ const Contact = () => {
   return (
     <div>
       <Header />
-      Contact
+      <div className='mx-[25%] my-[2%]'>
+        <h1 className='font-bold text-3xl'>Contact Us</h1>
+        <p className='pt-8'>Phone No.: 9876543210</p>
+        <p className='pt-4'>Address: Kondhwa, Pune</p>
+      </div>
     </div>
   )
 }
