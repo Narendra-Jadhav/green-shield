@@ -1,11 +1,11 @@
 import ProductCard from "./ProductCard";
 
 const data = [
-    { id: 0, img: "product_1.jpg", name: "Product 1", price: "$50" },
-    { id: 1, img: "product_2.png", name: "Product 2", price: "$30" },
-    { id: 2, img: "product_3.jpg", name: "Product 3", price: "$100" },
-    { id: 3, img: "product_4.jpg", name: "Product 4", price: "$5" },
-    { id: 4, img: "product_5.png", name: "Product 5", price: "$20" },
+    { id: 0, img: "product_1.jpg", name: "Product 1", price: "50" },
+    { id: 1, img: "product_2.png", name: "Product 2", price: "30" },
+    { id: 2, img: "product_3.jpg", name: "Product 3", price: "100" },
+    { id: 3, img: "product_4.jpg", name: "Product 4", price: "5" },
+    { id: 4, img: "product_5.png", name: "Product 5", price: "20" },
 ];
 
 const FeatureSection = () => {

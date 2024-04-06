@@ -1,5 +1,6 @@
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
+// import WeatherSection from "./WeatherSection";
 
 const Hero = () => {
   return (
@@ -24,18 +25,9 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className="relative xl:basis-1/3">
-            <img className="w-full object-cover rounded-lg brightness-50" src="/weather.jpg" alt="weather image" />
-            <div className="absolute max-w-[470px] sm:ml-16 ml-8 top-[50%] -translate-y-[50%] sm:space-y-4">
-                <h2 className="text-white text-2xl sm:text-4xl md:text-6xl font-bold">Check Weather</h2>
-                <p className="text-white text-xl pt-4 sm:pt-8">Get live weather updates of your location</p>
-                <div>
-                        <div className="bg-green-900 hover:bg-green-600 text-white rounded-full w-fit flex items-center px-4 py-2 sm:px-6 sm:py-3 gap-4 text-[14px] cursor-pointer">
-                            Check Now <BsArrowRight />
-                        </div>
-                </div>
-            </div>
-        </div>
+        {/* <div className="relative xl:basis-1/3">
+            <WeatherSection />
+        </div> */}
       </div>
     </div>
   )
