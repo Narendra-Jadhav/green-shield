@@ -1,6 +1,6 @@
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
-// import WeatherSection from "./WeatherSection";
+import WeatherSection from "./WeatherSection";
 
 const Hero = () => {
   return (
@@ -25,9 +25,9 @@ const Hero = () => {
             </div>
         </div>
 
-        {/* <div className="relative xl:basis-1/3">
+        <div className="relative xl:basis-1/3">
             <WeatherSection />
-        </div> */}
+        </div>
       </div>
     </div>
   )

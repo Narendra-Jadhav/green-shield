@@ -1,12 +1,17 @@
 /* eslint-disable react/prop-types */
+import '../index.css';
 
 const CurrentWeather = ({ data }) => {
+  if (!data) {
+    return null;
+  }
+
   return (
-    <div className=" w-[300px] border-r-4 shadow text-white">
+    <div className="w-[300px] text-white">
       <div className="top">
         <div>
-          <p className="city">{data.city}</p>
-          <p className="weather-description">{data.weather[0].description}</p>
+          <p className=" font-semibold text-lg m-0 tracking-wide">{data.name}</p>
+          <p className= "font-normal text-sm m-0">{data.weather[0].description}</p>
         </div>
         <img
           alt="weather"

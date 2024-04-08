@@ -1,3 +1,4 @@
+import Footer from '../components/shared/Footer'
 import Header from '../components/shared/Header'
 
 const About = () => {
@@ -8,6 +9,7 @@ const About = () => {
         <h1 className='font-bold text-3xl'>About Us</h1>
         <p className='pt-8'>Pesticides website. Check Plant Diseases. Get Weather details.</p>
       </div>
+      <Footer />
     </div>
   )
 }
