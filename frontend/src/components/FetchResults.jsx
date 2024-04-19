@@ -43,12 +43,17 @@ function FetchResults() {
   return (
     <div>
       <div>
-        <iframe 
+        {/* <iframe 
             title="Plant Disease Detection Model" 
             src="https://plant-disease-detection-model.streamlit.app/?embed=true" 
             width="100%" 
             height="550">
-        </iframe>
+        </iframe> */}
+        <iframe
+            src="https://dixitakhilesh-plant-disease-detection.hf.space?embeded=true"
+            width="100%"
+            height="600"
+        ></iframe>
       </div>
       <div className='my-8'>
         {filteredProducts.length > 0 && (

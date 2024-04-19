@@ -9,6 +9,7 @@ const ProductList = () => {
     const [plants, setPlants] = useState([]);
     const [selectedDisease, setSelectedDisease] = useState('');
     const [selectedPlant, setSelectedPlant] = useState('');
+    // const [keyword, setKeyword] = useState('');
   
     useEffect(() => {
         const fetchProducts = async () => {
@@ -62,6 +63,7 @@ const ProductList = () => {
                   <option key={index} value={plant}>{plant}</option>
                 ))}
               </select>
+              {/* <input type='text' name='q' onChange={(e) => setKeyword(e.target.value)} placeholder='Search Products...' className='mx-5' /> */}
             </div>
             <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 pt-8 gap-5">
                 {filteredProducts.map((product) => 
