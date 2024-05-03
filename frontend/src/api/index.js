@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://localhost:3000/products';
+const url = import.meta.env.VITE_BACKEND_DEPLOYMENT_URL + "/products";
 
 export const fetch = () => axios.get(url).then((res) => {
     return res;
