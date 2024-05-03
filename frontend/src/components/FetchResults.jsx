@@ -28,7 +28,7 @@ function FetchResults() {
 
       // Filter products that match the disease received
       if (data && data.disease) {
-        const filtered = Object.values(products).filter(product =>
+        const filtered = products.filter(product =>
           product.targetDisease.includes(data.disease)
         ).slice(0, 5); // Limit to 5 products
         setFilteredProducts(filtered);

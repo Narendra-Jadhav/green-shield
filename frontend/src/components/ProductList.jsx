@@ -43,7 +43,7 @@ const ProductList = () => {
         setSelectedPlant(e.target.value);
       };
     
-      const filteredProducts = Object.values(products).filter(product => {
+      const filteredProducts = products.filter(product => {
         return (selectedDisease ? product.targetDisease.includes(selectedDisease) : true) &&
                (selectedPlant ? product.targetPlant.includes(selectedPlant) : true);
       });
